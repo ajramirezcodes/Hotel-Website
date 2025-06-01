@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Tropic Resort</title>
+    </head>
+    <body>
+        <main>
+        <header>
+            <div class="video-container">
+            <video muted autoplay loop class="header-video">
+                <source src="https://cdn.pixabay.com/video/2024/02/29/202393-918066374_large.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            </div>
+            <div>
+                <a href="index.html" rel="noreferrer" ><img src="https://img.icons8.com/?size=100&id=58977&format=png&color=000000" alt="Tropic Resort Logo" class="logo"></a>
+            <h1><a href="index.html" rel="noreferrer" >Tropic Resort<a></h1>
+            <p class="slogan">Where family and the tropics meet.</p>
+            <div class="rates">  
+            <div class="destination">
+           <label for="destination-options">Destination</label>
+            <select id="destination-options" name="destination-options">
+                <option value="">Find a Resort</option>
+                <option value="mexico">Mexico</option>
+                <option value="dominican-republic">Dominican Republic</option>
+                <option value="puerto-rico">Puerto Rico</option>
+                <option value="st-lucia">St. Lucia</option>
+                <option value="bahamas">Bahamas</option>
+            </select>
+            </div>
+            <div class="in-dates">
+                <label for="date-picker1">Check In</label>
+                <input type="date" id="date-picker1" name="date-picker1">
+            </div>
+            <div class="out-dates">
+                <label for="date-picker2">Check Out</label>
+                <input type="date" id="date-picker2" name="date-picker2">
+            </div>
+            <div class="guests">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="6">
+            </div>
+            <div class="search">
+                <button type="button" id="rates-button">Check Rates</button>
+          </div>  
+            </div>
+            <hr></hr>
+            <nav >
+                <ul class="tabs">
+                    <li>
+                        <a href="activities.html" class="icon-link" rel="noreferrer">
+                            <img src="https://img.icons8.com/?size=100&id=9317&format=png&color=FF8A00" alt="Boat Icon">
+                            <span>Activites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dining.html" class="icon-link" rel="noreferrer">
+                            <img src="https://img.icons8.com/?size=100&id=12715&format=png&color=FF8A00">
+                            <span>Dining</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="icon-link" rel="noreferrer">
+                            <img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FF8A00">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-us.html" class="icon-link" rel="noreferrer">
+                            <img src="https://img.icons8.com/?size=100&id=11220&format=png&color=FF8A00">
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section-1">
+            <div class="overlay"></div>
+        <h2>Our Resorts</h2>
+           <div class="image-grid">
+            <div class="left-image">
+             <div class="left-image1">
+                <img src="https://images.unsplash.com/photo-1571003123771-bd6a099dd83a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc29ydHN8ZW58MHx8MHx8fDI%3D" alt="image of our resort" loading="lazy"> 
+                <div class="left-image1-text">Puerto Rico</div>
+             </div>
+            <div class="left-image2">
+                <img src="https://images.unsplash.com/photo-1584132869994-873f9363a562?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlc29ydHN8ZW58MHx8MHx8fDI%3D" alt="image of our resort" loading="lazy">
+                <div class="left-image2-text">Bahamas</div>
+             </div>
+            </div>
+            <div class="center-image">
+                <div class="center-image1">
+                <img src="https://images.unsplash.com/photo-1581859814481-bfd944e3122f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc29ydHN8ZW58MHx8MHx8fDI%3D" alt="image of our resort" loading="lazy">
+                <div class="center-text">Dominican Republic</div>
+                </div>
+            </div>
+         <div class="right-image">
+            <div class="right-image1">
+             <img src="https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzb3J0c3xlbnwwfHwwfHx8Mg%3D%3D" alt="image of our resort" loading="lazy">
+             <div class="right-image1-text">St. Lucia</div>
+            </div>
+            <div class="right-image2">
+             <img src="https://images.unsplash.com/photo-1617859047452-8510bcf207fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0c3xlbnwwfHwwfHx8Mg%3D%3D" alt="image of our resort" loading="lazy">
+             <div class="right-image2-text">Mexico</div>   
+            </div>
+            </div> 
+           </div>
+        </section>
+        <section class="section-2">
+            <h3>Our Rankings by Critics</h3>
+            <p>Across all categories</p>
+                <div class="stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            <ul class="rankings">
+              <li>
+                <div class="circle1">
+                 <img class="circle-image1" src="https://img.icons8.com/?size=100&id=561&format=png&color=339AF0" alt="A room icon">
+                </div>
+                 <span class="circle-text1">Rooms</span>
+              </li>
+              <li>
+                <div class="circle1">
+                    <img class="circle-image1" src="https://img.icons8.com/?size=100&id=X57NDFt9v1BN&format=png&color=339AF0" alt="A room service icon">
+                </div>
+                <span class="circle-text1">Amenities</span>
+              </li>
+              <li>
+                <div class="circle1">
+                    <img class="circle-image1" src="https://img.icons8.com/?size=100&id=4hPE6MqJI8rK&format=png&color=339AF0" alt="A services icon">
+                </div>
+                <span class="circle-text1">Service</span>
+              </li>
+              <li>
+                <div class="circle1">
+                    <img class="circle-image1" src="https://img.icons8.com/?size=100&id=xCkwHQyDkO4l&format=png&color=339AF0" alt="A dining icon">
+                </div>
+                <span class="circle-text1">Cuisine</span>
+              </li>
+              <li>
+                <div class="circle1">
+                    <img class="circle-image1" src="https://img.icons8.com/?size=100&id=3723&format=png&color=339AF0" alt="A location icon">
+                </div>
+                <span class="circle-text1">Locations</span>
+              </li>  
+            </ul>
+        </section>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+    <footer> 
+    <div class="center-footer">
+        <a href="index.html" rel="noreferrer" ><img src="https://img.icons8.com/?size=100&id=58977&format=png&color=000000" alt="Tropic Resort Logo" class="logo"></a>
+       <h4>Tropic Resort</h4>
+    </div>
+    <div class="footer-columns">
+         <ul><span>Reservations</span>
+            <li>REQUEST AN INVOICE</li>
+            <li>FIND A RESERVATION</li>
+            <li>EMAIL PREFERENCES</li>
+            <li>GIFT CARDS</li>
+        </ul>
+        <ul><span>About</span>
+            <li>ABOUT US</li>
+            <li>ENVIRONMENTAL</li>
+            <li>HEALTH AND SAFETY</li>
+            <li>CAREERS</li>
+            <li>CONTACT US</li>
+        </ul>
+       
+        <ul><span>News</span>
+            <li>PRESS ROOM</li>
+            <li>NEW OPENINGS</li>
+            <li>MAGAZINE</li>
+            <li>NEWSLETTER</li>
+        </ul>
+    </div>
+    <div class="social-icons">
+              <ul>
+                <li>
+                    <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" rel="noreferrer" class="social-icon">
+                    <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=FF8A00" alt="facebook icon">
+                    </a>               
+                </li>
+                <li>
+                    <a href="https://x.com/i/flow/login" rel="noreferrer" class="social-icon">
+                    <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=FF8A00" alt="x icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" rel="noreferrer" class="social-icon">
+                    <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=FF8A00" alt="insta icon">
+                    </a>
+                </li>
+                <li>
+                   <a href="https://www.tiktok.com/login/phone-or-email/email" rel="noreferrer" class="social-icon">
+                   <img src="https://img.icons8.com/?size=100&id=118638&format=png&color=FF8A00" alt="tiktok icon"> 
+                   </a> 
+                </li>
+            </ul>
+        </div>
+        <hr>
+    </footer>
+</html>

@@ -1,0 +1,1999 @@
+*, ::before, ::after {   /* to include padding & border to width and height values*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+ }
+
+
+.video-container video {
+  position: absolute; /* Position the video */
+  display: block;
+  object-fit: cover; /* Cover the container without distorting */
+  width: 100%; /* Full width */
+  height: 100%; /* Full viewport height */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the video to the background */
+}
+
+
+.video-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)); /* Adjust colors and opacity */
+  z-index: -1;
+}
+
+header .logo {
+    margin-left: 8%;
+    margin-top: 60px;
+    text-align: left;
+}
+
+
+header h1 a {
+    font-size: 40px;
+    color: #FF8A00;
+    text-decoration: none;
+}
+
+header h1, header p {
+    margin-left: 8%;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #FF8A00;
+}
+
+header .slogan {
+    font-size: 22px;
+    margin-top: -15px;
+}
+
+
+.shopping-cart {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 82.7%;
+    bottom: 80%;
+}
+
+/* start of checking rates */
+
+.rates label {
+font-size: 18px;
+color: white;
+}
+
+
+select[name="destination-options"] {
+    display: block;
+    width: 300px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    opacity: .9;
+    font-size: 16px;
+    font-style: italic;
+    border: black solid 2px;
+}
+
+
+.dates label, input {
+    display: block;
+}
+
+input[type="date"] {
+    width: 300px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    opacity: .9;
+    font-size: 16px;
+    font-style: italic;
+    border: black solid 2px;
+}
+
+
+.guests input{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: 300px;
+    height: 35px;
+    opacity: .9;
+    font-size: 16px;
+    font-style: italic;
+    border: black solid 2px;
+}
+
+.search button {
+    width: 300px;
+    height: 35px;
+    background-color: gainsboro;
+    border: black solid 2px;
+    font-size: 14px;
+}
+
+.rates {
+    margin-left: 8%;
+    text-align: left;
+}
+
+
+/* start of navigation */
+
+header hr {
+    width: 94%;
+    margin: 50px auto -5% auto;
+    border-color: #FF8A00;
+}
+
+
+.tabs {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-evenly; /* Evenly spaces the list items */
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 7% 0 0 0; /* Sets the top margin to 10% and removes left/right margins */
+    width: 100%; /* Sets the width of the tabs to 100% of the parent container */
+    
+}
+
+.tabs li {
+   text-align: center;
+   flex: 1; /* Ensures each item gets equal width */
+ }
+
+ .tabs li span {
+    color: white;
+    font-size: 16px;
+ }
+
+
+ .tabs a {
+    text-decoration: none;
+   
+ } 
+
+
+
+ .icon-link {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: white;
+}
+
+
+.icon-link img {
+  width: 50px; /* Relative to font size */
+  height: 50px; /* Relative to font size */
+  margin-bottom: 0.5em; /* Relative to font size */
+}
+
+.icon-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-decoration-color: white;
+}
+ 
+
+ /* end of header */
+
+ /* start of image grid */
+
+ 
+
+.section-1 {
+    position: relative;
+    padding-bottom: 30rem; /* Adjust this value to control the gradient's reach */
+}
+
+.section-1 .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent; /* Ensure the overlay doesn't interfere with the gradient */
+   
+}
+
+ .section-1 h2 {
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    padding-top: 30%;
+    font-size: 40px;
+    position: relative;   
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.3) 15%,  rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.3) 50%,  rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0) 100% ); /* Adjust colors and opacity */
+}
+
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    place-items: center;
+    justify-content: space-evenly;
+    margin: 10rem 0 5rem 0;
+}
+
+
+
+
+/* css for left images in grid */
+
+.left-image {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    object-fit: cover;
+    gap: 52px;
+    margin-left: 1rem;
+    
+}
+
+.left-image1, .left-image2{
+    position: relative; /* parent of child (position: absolute) */
+    overflow: hidden;
+    border-radius: 5% 5% 7% 7%;
+    
+}
+
+.left-image1 .left-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.7s ease;
+    
+   
+}
+
+.left-image1-text, .left-image2-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  /* Uses Flexbox to center the text both horizontally and vertically within the overlay.*/
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(255, 138, 0, 0.4); /* Semi-transparent background */
+    color: black; /* Text color */
+    font-size: 25px; /* Text size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.7s ease; /* Smooth transition for the text */
+   
+  }
+
+
+
+  .left-image1:hover img{
+    opacity: 0.7; /* Reduce image opacity on hover */
+  }
+
+  .left-image2:hover img{
+    opacity: 0.7; /* Reduce image opacity on hover */
+  }
+
+
+.left-image1:hover .left-image1-text {
+    opacity: 1; /* Show text on hover */
+    
+  }
+
+
+  .left-image2:hover .left-image2-text {
+    opacity: 1; /* Show text on hover */
+    
+  }
+
+.left-image1:hover {
+    transform: scale(1.1); /* Scale image up on hover */
+    transition: transform 0.7s ease; /* Smooth transition for the scaling */
+}
+
+.left-image2:hover {
+    transform: scale(1.1); /* Scale image up on hover */
+    transition: transform 0.7s ease; /* Smooth transition for the scaling */
+}
+
+
+/* css for center image in grid */
+
+
+.center-image {
+    display: grid;
+    grid-template-rows: 1fr;
+    object-fit: cover;
+}
+
+.center-image1 {
+    position: relative; /* parent of child (position: absolute) */
+    overflow: hidden;
+    border-radius: 7%;
+}
+
+.center-image1 img {
+    width: auto;
+    height: 725px;
+    object-fit: cover;
+    transition: opacity 0.7s ease;
+}
+
+.center-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  /* Uses Flexbox to center the text both horizontally and vertically within the overlay.*/
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 138, 0, 0.4); /* Semi-transparent background */
+    color: black; /* Text color */
+    font-size: 25px; /* Text size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.7s ease; /* Smooth transition for the text */
+  }
+
+    .center-image1:hover img{
+        opacity: 0.7; /* Reduce image opacity on hover */
+    }
+
+    .center-image1:hover {
+        transform: scale(1.05); /* Scale image up on hover */
+        transition: transform 0.7s ease; /* Smooth transition for the scaling */
+    }
+
+    .center-image1:hover .center-text {
+        opacity: 1; /* Show text on hover */
+    }
+
+
+/* css for right images in grid */
+
+
+.right-image {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    object-fit: cover;
+    gap: 52px;
+    margin-right: 1rem;
+   
+}
+
+.right-image1, .right-image2{
+    position: relative; /* parent of child (position: absolute) */
+    overflow: hidden;    
+    border-radius: 7%;
+}
+
+.right-image1 .right-image2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.7s ease;
+}
+
+.right-image1-text, .right-image2-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  /* Uses Flexbox to center the text both horizontally and vertically within the overlay.*/
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(255, 138, 0, 0.4); /* Semi-transparent background */;
+    color: black; /* Text color */
+    font-size: 25px; /* Text size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.7s ease; /* Smooth transition for the text */
+  }
+
+
+
+  .right-image1:hover img{
+    opacity: 0.7; /* Reduce image opacity on hover */
+  }
+
+  .right-image2:hover img{
+    opacity: 0.7; /* Reduce image opacity on hover */
+  }
+
+
+.right-image1:hover .right-image1-text {
+    opacity: 1; /* Show text on hover */
+    
+  }
+
+
+  .right-image2:hover .right-image2-text {
+    opacity: 1; /* Show text on hover */
+    
+  }
+
+.right-image1:hover {
+    transform: scale(1.1); /* Scale image up on hover */
+    transition: transform 0.7s ease; /* Smooth transition for the scaling */
+}
+
+.right-image2:hover {
+    transform: scale(1.1); /* Scale image up on hover */
+    transition: transform 0.7s ease; /* Smooth transition for the scaling */
+}
+
+/* end of image grid */
+
+
+.section-2 {
+    background-color: #B8D0D8;
+    padding-top: 2rem; /* Adjust this value to align with the gradient */
+    margin-top: -10rem; /* Pull section-2 up to overlap with the gradient */
+    margin-bottom: -10rem; /* close the margin between section2 and footer */
+    padding-bottom: 7rem;
+}
+
+
+.section-2 h3 {
+    text-align: center;
+    margin: 10rem 0 5px 0;
+    font-size: 30px;
+    color: white;
+    padding-top: 0;
+}
+
+.section-2 p  {
+    text-align: center;
+    margin: 2rem 0 10rem 0;
+    font-size: 24px;
+    color: white;
+    
+}
+
+
+.stars {
+    display: flex; /* to center align */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 2rem 0 7rem 0;
+}
+
+
+
+        .star {
+            position: relative;
+            display: inline-flex;
+            color: gold;
+            width: 0;
+            height: 0;
+            border-bottom: 35px  solid gold;
+            border-right:  50px solid transparent;
+            border-left:   50px solid transparent;
+            transform: rotate(35deg);
+            
+        }
+        .star:before {
+            position: absolute;
+            display: inline-flex;
+            top: -25px;
+            left: -35px;
+            width: 0;
+            height: 0;
+            border-bottom: 40px solid gold;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            transform: rotate(-35deg);
+            content: '';
+            
+        }
+
+
+        .star:after {
+            position: absolute;
+            display: inline-flex;
+            color: gold;
+            top: 3px;
+            left: -55px;
+            width: 0;
+            height: 0;
+             border-bottom: 35px solid gold;
+            border-right: 50px solid transparent;
+            border-left: 50px solid transparent;
+            transform: rotate(-70deg);
+            content: '';
+        }
+
+        .star:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s ease;
+    }
+
+    
+
+.rankings {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 7% 0; /* Removes default padding */
+    margin: 7% 0 7% 0; /* Sets the top margin to 10% and removes left/right margins */
+    width: 100%; /* Sets the width of the tabs to 100% of the parent container */
+}
+
+.rankings li {
+    text-align: center;
+    flex: 1; /* Ensures each item gets equal width */
+}
+ 
+
+.circle1 {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 11vw;
+    width: 11vw;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.circle-image1 {
+    position: absolute;
+    left: 20%;
+    top: 15%; 
+    height: 6vw;
+    width: 6vw;
+}
+
+
+
+
+.circle-text1 {
+    color: white;
+    display: block;
+    margin: 10px auto 0 auto;
+    font-size: 20px;
+    text-align: center; /* Center text */
+}
+
+/* footer starts */
+
+
+
+
+footer {
+    background-color: black;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 4px solid #FF8A00;
+    align-items: center;
+}
+
+footer,
+footer a {
+  color: white;
+}
+
+.center-footer {
+    text-align: center;
+}
+
+.center-footer h4 {
+    color: white;
+}
+
+
+
+.footer-columns {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1;
+    padding-top: 6rem;
+    align-items: center;
+    
+   
+}
+
+.footer-columns ul span {
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-columns li {
+    list-style-type: none;
+    padding-top: 1rem;
+    font-size: 14px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+
+.social-icons ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+
+}
+
+
+.social-icons li {
+    list-style-type: none;
+}
+
+footer hr {
+    width: 60%;
+    margin: 2% auto 1% auto;
+    border-color: #FF8A00;
+}
+
+
+
+/* Start of Activities Page */
+
+
+
+.icons-header {
+    background-color: black;
+    height: 12vh; /* Adjust height as needed */
+    border-bottom: 4px #FF8A00 solid;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Vertically center the tabs */
+    justify-content: center; /* Horizontally center the tabs */
+}
+
+.icons-header .tabs{
+    display: flex;
+    justify-content: space-evenly; /* Evenly space the tabs */
+    align-items: center; /* Vertically center the tabs */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Take up full width of the header */
+    gap: 20rem; /* Initial spacing between tabs */
+}
+
+.icons-header .tabs li {
+   text-align: center;
+   flex: 1; /* Ensures each item gets equal width */
+ }
+
+ .icons-header .tabs li span {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+ }
+
+
+ .icons-header .tabs a {
+    text-decoration: none;
+   
+ } 
+
+
+
+ .icons-header .icon-link {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: white;
+}
+
+
+.icons-header .icon-link img {
+  width: 41px; /* Relative to font size */
+  height: 39px; /* Relative to font size */
+  margin-bottom: 0.5em; /* Relative to font size */
+}
+
+.icons-header .icon-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-decoration-color: white;
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .icons-header .tabs {
+        gap: 11rem
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .icons-header .tabs {
+        gap: 9rem; /* Adjusted spacing for smaller screens */
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .icons-header .tabs {
+        gap: 7rem; /* Adjusted spacing for smaller screens */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .icons-header .tabs {
+        gap: 5rem; /* Further adjusted spacing for even smaller screens */
+    }
+}
+
+@media (max-width: 575px) {
+    .icons-header .tabs {
+        gap: 3rem;
+    }
+}
+
+
+
+/* end of header on activities page */
+
+
+.activities-intro, .dining-intro, .about-intro, .contact-intro {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+
+.activities-logo, .dining-logo, .about-logo, .contact-logo {
+    margin-top: -2rem;
+}
+
+.activities-intro h1, .dining-intro h1, .about-intro h1, .contact-intro h1 {
+    font-size: 18px;
+}
+
+.activities-intro p, .dining-intro p {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.activities-intro select{
+   width: 400px;
+   height: 40px;
+   font-style: italic;
+}
+
+
+/* start of css for activities calendar */
+
+.calendar {
+    width: 375px;
+    height: 350px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    /* when you set the width and height of an element, the specified dimensions will include the padding and border, 
+    ensuring that the total size of the element (including padding and border) stays within the defined width and height values; */
+    background-color: #b4c7d0;
+    opacity: .8;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between; /* places buttons on either side of the month displayed */
+    width: 100%;
+    margin: 1rem auto;
+    font-size: 24px;
+}
+
+.calendar .header span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.calendar-buttons {
+    font-size: 30px;
+    background-color: #77ACC7;
+}
+
+.days, .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Creates 7 equal-width columns (one for each day of the week). */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.dates {
+    grid-template-rows: repeat(6, 1fr); /* Creates 6 equal-height rows (to accommodate up to 6 weeks in a month) */
+    height: 100%;
+    align-items: center;
+}
+
+.dates div {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.time-slots {
+    display: none; /* Hidden by default */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 30px; /* Space between time slots */
+    place-items: center; /* Center-align time slots */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto 100px auto auto;
+    padding: 20px; /* Add padding */
+}
+
+.time-slots div {
+    background-color: #77ACC7;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+} 
+
+/* Form container */
+#activity-reservation {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 1000;
+    height: 56%;
+    
+}
+
+/* Form inputs and labels */
+#activity-reservation label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#activity-reservation input {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.reserve-button {
+    background-color: #FF8A00;
+    color: black;
+    padding: 7px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+.exit-button {
+   background-color: #FF8A00;
+    color: black;
+    padding: 7px 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.inactive-date {
+    text-decoration: line-through;
+    pointer-events: none; /* Disable click events */
+}
+
+.inactive-time {
+    text-decoration: line-through;
+    pointer-events: none; /* Disable click events */
+}
+
+/* end of css for activities calendar*/
+
+.activities-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 97vh;
+    position: absolute; /* Position the video */
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.activities-paragraph h2 {
+    text-align: center;
+    margin: 7rem 0 5rem 0; 
+    padding-top: 20%;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.activities-paragraph p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    line-height: 200%; /* add space between lines in paragraph */
+   text-align: center;
+    font-size: 17px;
+}
+
+/* start of activities columns */
+
+
+.activities-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Flexible columns to wrap*/
+    
+}
+
+
+.activities-column:nth-child(1) {
+    background-color: #E7F1F5;
+     justify-content: center;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.activities-column:nth-child(2) {
+    background-color: #e9ecd1;
+     justify-content: center;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.activities-column:nth-child(3) {
+    background-color: #77ACC7;
+     justify-content: center;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.activities-column  p {
+    width: 400px;
+    text-align: center;
+    margin: 3rem auto;
+    line-height: 150%;
+}
+
+
+.activities-column hr {
+    width: 10%;
+    margin: -20px auto 20px auto;
+}
+
+.learn-more {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px; 
+    color: white;
+}
+
+.activities-columns img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10rem auto 3rem auto;
+    text-align: center;
+}
+
+
+/* start of activities quote */
+
+.activities-quote img, text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.activities-quote text {
+    line-height: 200%;
+   text-align: center;
+    font-size: 25px;
+}
+
+.activities-quote img {
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   width: 50px;
+   height: 50px;
+   object-fit: cover;
+}
+
+.activities-quote p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 18px;
+
+}
+
+
+
+/* start of dining page (some dining css in activities block) */
+
+
+.dining-intro {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+     background-color: #5A5D9D ;
+    padding: 2rem 0 2rem 0 ;
+}
+
+
+
+.dining-logo {
+    margin-top: 1rem;
+}
+
+.dining-intro h1 {
+    font-size: 18px;
+    color: white;
+}
+
+.dining-intro p {
+    font-size: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.dining-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+}
+   
+
+.dining-paragraph {
+    text-align: center;
+    width: 40%;
+    margin: 6rem auto;
+    font-size: 20px;
+    line-height: 200%;
+    
+}
+
+.restaurant-intro {
+     text-align: center;
+    margin: 6rem auto;
+    font-size: 26px;
+    color: rgb(84, 84, 84);
+}
+
+/* start of restaurant list */
+
+.restaurant-list {
+    display: inline-block;
+    width: 100%; /* Full width */
+    margin: 5rem auto;
+    padding-bottom: 60px; /* Add padding to prevent overlap */
+     overflow-x: hidden;
+}
+
+.restaurant-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+    gap: 1%;
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Ensure cards don't wrap by default */
+}
+
+.restaurant-div {
+    flex: 0 0 16.666%;
+    display: block;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    flex-shrink: 0; /* Prevents the cards from shrinking */
+     box-shadow: 2px 2px 2rem 2px #5A5D9D;
+}
+
+.restaurant-pic {
+    height: 20vh;
+    width: 100%;
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    object-fit: cover;
+}
+
+.restaurant-name {
+    margin: 2rem auto;
+    font-size: 24px;
+}
+
+.restaurant-hr {
+    width: 25%;
+    margin: auto;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 2px;
+}
+
+.restaurant-bio1 {
+    margin: 2rem auto 0 auto;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(41, 158, 119);
+}
+
+.restaurant-bio2 {
+    margin: 2rem 5px;
+    font-size: 16px;
+}
+
+.dining-control {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.dining-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 3rem auto;
+}
+
+#list-number {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .restaurant-wrapper {
+        flex-wrap: wrap; /* Allow cards to wrap */
+        justify-content: center; /* Center cards */
+        gap: 20px; /* Add space between stacked cards */
+        transform: none !important;
+    }
+
+    .restaurant-div {
+        flex: 0 0 80%; /* Each card takes up 80% of the width */
+        height: auto; /* Adjust height for stacking */
+    }
+
+    .restaurant-name {
+        font-size: 22px;
+    }
+
+    .restaurant-bio1, .restaurant-bio2 {
+        font-size: 18px;
+    }
+
+    .restaurant-bio2 {
+        font-size: 14px;
+    }
+
+    .dining-button {
+        display: none; /* Hide navigation buttons on small screens */
+    }
+
+    .restaurant-list {
+        padding-bottom: 120px; /* Increase padding to prevent footer overlap */
+    }
+   
+
+}
+
+
+/* CSS for rooms page */
+
+#cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 350px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 75%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+
+#cart-container .cart-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 1rem auto;
+}
+
+#cart-container img {
+    margin-top: 2rem;
+}
+
+#cart-container hr {
+    margin-bottom: 2rem;
+    border: 1px solid #FF8A00;
+}
+
+
+.cart-button {
+    width: 75px;
+    padding: 4px;
+    font-size: 14px;
+    margin: 1rem auto;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#room-card-container {
+    min-height: 100px; /* Ensures visibility */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.room-product {
+    margin: 2rem auto;
+}
+
+.room-card {
+    display: block;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    margin: 20px 10px;
+    width: 50rem;
+    height: 300px;
+}
+
+.room-card h3, .room-card p {
+    margin: 0 auto 1rem auto; 
+}
+
+.room-icon {
+    margin-right: 10px; /* Adjust spacing as needed */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+
+.room-card button {
+    width: 150px;
+    padding: 4px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+.room-image {
+    width: 464px;
+    height: 300px;
+    margin-left: 20rem;
+    margin-top: -289px;
+    display: block;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid gainsboro;
+}
+
+.rooms-intro {
+    margin: 3rem auto;
+    text-align: center;
+    align-items: center;
+}
+
+.rooms-intro p {
+    font-size: 18px;
+}
+
+#footer {
+    margin-top: 4rem;
+}
+
+.destination-rooms {
+    font-size: 30px;
+    margin: 2rem auto 1rem auto;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .room-card {
+        display: block; /* Change to block layout */
+        width: 60%; /* Full width */
+        height: 600px; /* Allow height to adjust based on content */
+        padding-bottom: 20px; /* Add padding to accommodate the image */
+        margin-left: -13.5rem;
+        margin-bottom: 10rem;
+        font-size: 16px;
+    }
+
+    .room-image {
+        position: static; /* Reset positioning */
+        width: 105%; /* Full width */
+        height: 350px; /* Fixed height for the image */
+        margin: 15px 0 0 -1rem; /* Remove margin */
+        border-radius: 0 0 15px 15px; /* Adjust border radius */
+        border-bottom: none; /* Remove border at the bottom */
+        object-fit: cover;
+    }
+
+    .room-card button {
+        margin-top: 10px; /* Add margin to the button */
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 250px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 75%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.room-card {
+        display: block; /* Change to block layout */
+        width: 60%; /* Full width */
+        height: 600px; /* Allow height to adjust based on content */
+        padding-bottom: 20px; /* Add padding to accommodate the image */
+        margin-left: -13.5rem;
+        margin-bottom: 10rem;
+        font-size: 14px;
+    }
+
+    .room-image {
+        position: static; /* Reset positioning */
+        width: 105%; /* Full width */
+        height: 350px; /* Fixed height for the image */
+        margin: 15px 0 0 -1rem; /* Remove margin */
+        border-radius: 0 0 15px 15px; /* Adjust border radius */
+        border-bottom: none; /* Remove border at the bottom */
+        object-fit: cover;
+    }
+
+    .room-card button {
+        margin-top: 10px; /* Add margin to the button */
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 220px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 75%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+     .room-card {
+        display: block; /* Change to block layout */
+        width: 60%; /* Full width */
+        height: 500px; /* Allow height to adjust based on content */
+        padding-bottom: 20px; /* Add padding to accommodate the image */
+        margin-left: -13.5rem;
+        margin-bottom: 10rem;
+        font-size: 14px;
+    }
+
+    .room-image {
+        position: static; /* Reset positioning */
+        width: 106%; /* Full width */
+        height: 300px; /* Fixed height for the image */
+        margin: 15px 0 0 -1rem; /* Remove margin */
+        border-radius: 0 0 15px 15px; /* Adjust border radius */
+        border-bottom: none; /* Remove border at the bottom */
+           object-fit: cover;
+    }
+
+    .room-card button {
+        margin-top: 10px; /* Add margin to the button */
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 220px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 70%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+     .room-card {
+        display: block; /* Change to block layout */
+        width: 60%; /* Full width */
+        height: 500px; /* Allow height to adjust based on content */
+        padding-bottom: 20px; /* Add padding to accommodate the image */
+        margin-left: -13.5rem;
+        font-size: 12px;
+    }
+
+    .room-image {
+        position: static; /* Reset positioning */
+        width: 114%; /* Full width */
+        height: 300px; /* Fixed height for the image */
+        margin: 15px 0 0 -1rem; /* Remove margin */
+        border-radius: 0 0 15px 15px; /* Adjust border radius */
+        border-bottom: none; /* Remove border at the bottom */
+           object-fit: cover;
+    }
+
+    .room-card button {
+        margin-top: 10px; /* Add margin to the button */
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 220px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 70%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+}
+
+@media (max-width: 767px) {
+    .room-card {
+        display: block; /* Change to block layout */
+        width: 54%; /* Full width */
+        height: 500px; /* Allow height to adjust based on content */
+        padding-bottom: 20px; /* Add padding to accommodate the image */
+        margin-left: -13.5rem;
+        font-size: 12px;
+    }
+
+    .room-image {
+        position: static; /* Reset positioning */
+        width: 114%; /* Full width */
+        height: 185px; /* Fixed height for the image */
+        margin: 15px 0 0 -1rem; /* Remove margin */
+        border-radius: 0 0 15px 15px; /* Adjust border radius */
+        border-bottom: none; /* Remove border at the bottom */
+           object-fit: cover;
+    }
+
+    .room-card button {
+        margin-top: 10px; /* Add margin to the button */
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+
+    #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 220px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 60%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    font-size: 14px;
+    transition: top 0.3s ease;
+}
+}
+
+
+/* Start of checkout page */
+
+
+
+.checkout-video {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire area */
+    position: fixed; /* Fix the video to the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the video behind other content */
+}
+
+
+.checkout-form {
+    background-color: #E7F1F5;
+    width: 60%;
+    min-width: 30%;
+    height: 130vh; /* Subtract header and footer heights */
+    margin: 0 auto;
+    z-index: 1; /* Ensure the form is above the video */
+}
+
+
+.checkout-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form h4 {
+    font-size: 26px;
+    margin: 2rem 0 2rem 2rem;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field label {
+    font-size: 18px;
+    margin-left: 1.5rem;
+}
+
+.input-field input {
+    padding: 6px;
+    font-size: 16px;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: gainsboro 1px solid;
+}
+
+.input-field input:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.input-field-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.input-field-2 label {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 18px;
+}
+
+.input-field-2 input {
+    padding: 6px;
+    font-size: 16px;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: gainsboro 1px solid;
+    width: 320px;
+}
+
+.input-field-2 input:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.input-field-3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.input-field-3 input:focus, .input-field-3 select:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.input-field-3 label {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.input-field-3 .state {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -.5rem;
+}
+
+.input-field-3 select, .input-field-3 input {
+    padding: 6px;
+    font-size: 16px;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: gainsboro 1px solid;
+    width: 150px;
+}
+
+
+
+.checkout-form .name {
+        flex: 1;
+}
+
+
+.checkout-footer {
+    background-color: black;
+    height: 12vh; /* Match header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #FF8A00;
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.checkout-hr {
+    margin: 2rem auto 0 auto;
+    width: 100%;
+}
+
+
+.input-group-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field-4 {
+    display: inline-flex;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.input-field-4 label {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.input-group-5 {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+}
+
+.input-field-5 {
+    margin: 1rem 0 0 1rem;
+}
+
+.input-field-5 label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.input-field-5 input {
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: gainsboro 1px solid;
+    width: 220px;
+}
+
+.input-field-5 input:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-group-6 {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+}
+
+.input-field-6 {
+    margin: 1rem 0 0 1rem;
+}
+
+.input-field-6 label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.input-field-6 input {
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: gainsboro 1px solid;
+    width: 150px;
+}
+
+.input-field-6 input:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.payment-button {
+    width: 40%;
+    margin: 4rem ;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #16a1d9;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+
+.checkout-info #cart-container {
+    position: fixed;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    width: 350px;
+    height: 500px;
+    z-index: 100;
+    margin-left: 40%;
+    margin-top: 1%;
+    background-color: #f1f0ea;
+    transition: top 0.3s ease;
+}
+
+
+#cart-container .cart-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 1rem auto;
+}
+
+#cart-container img {
+    margin-top: 2rem;
+}
+
+#cart-container hr {
+    margin-bottom: 2rem;
+    border: 1px solid #FF8A00;
+}
+
+
+.checkout-info #cart-container div, .checkout-info #cart-container p {
+   font-size: 18px;
+}
+
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    justify-content: center;
+    
+}
+
+.promo input {
+    padding: 5px;
+    font-size: 14px;
+    
+}
+
+.promo input:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.promo button {
+    padding: 5px;
+    font-size: 14px;
+    
+}
+
+.checkout-destination-rooms, .checkout-total-dates{
+        color: #FF8A00;
+}
+
+
+
+/* start of the confirmation page */ 
+
+.confirmation-number {
+    font-size: 35px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+
+.confirmation-paragraph {
+    font-size: 25px;
+    margin: 0 auto 5rem 0;
+    text-align: center;
+    
+}
+
+
+
+/* start of the about page */
+
+.about-intro p {
+        font-size: 20px;
+        width: 60%;
+        margin: 5rem auto;
+        text-align: center;
+        line-height: 200%;
+}
+
+
+/* start of the contact page */
+
+
+.contact-intro p {
+    font-size: 30px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+
+.contact-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+}
+
+.contact-field {
+     margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-field input {
+        width: 36rem;
+        height: 30px;
+        margin: 1rem 0;
+        font-size: 18px;
+}
+
+.contact-field textarea {
+    font-size: 18px;
+    width: 36rem;
+    height: 25rem;
+}
+
+
+.contact-field input:focus, .contact-field textarea:focus {
+    border: 2px solid #B8D0D8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-field button {
+        display: block;
+        padding: 5px;
+        width: 20rem;
+        font-size: 20px;
+        margin: 1rem auto 5rem auto;
+        background-color: #E7F1F5;
+}
+
+.contact-address, .contact-number, .contact-email {
+    margin: 0 auto 5rem auto;
+    font-size: 20px;
+}
+
+.contact-field img {
+    margin: 1rem auto;
+}
+
+
