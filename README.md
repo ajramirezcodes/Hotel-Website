@@ -1,7 +1,6 @@
 # Hotel-Website
 
-
-A responsive hotel website built with HTML, CSS, and JavaScript. This site provides users with information about the hotel, room options, amenities, and booking details.
+A hotel website that provides users with information about the hotel, room options, amenities, and booking details.
 
 ## Features
 
@@ -17,7 +16,7 @@ A responsive hotel website built with HTML, CSS, and JavaScript. This site provi
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla)
+- JavaScript
 
 
 ## Live Demo
